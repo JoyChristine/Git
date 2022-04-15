@@ -1,9 +1,12 @@
 #search{
-    margin-left: 1.4vw;
-    margin-top: 1vw;
+  margin-left: 19vw;
+    margin-top: 6vw;
     height: 1.5vw;
-    width: 18vw;
-    background-color: transparent;
+    /* width: 15vw; */
+    padding:1% 32% 1% 2%;
+    font-size:1.8vw;
+    color: purple;
+    /* background-color: transparent; */
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   }
   
