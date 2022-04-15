@@ -9,13 +9,15 @@ import { SearchComponent } from './search/search.component';
 import { PipePipe } from './pipe/pipe.pipe';
 import { DirectiveDirective } from './directive/directive.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SearchComponent,
     PipePipe,
-    DirectiveDirective
+    DirectiveDirective,
+    
   ],
   imports: [
     BrowserModule,
