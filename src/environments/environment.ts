@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  GitKey: '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'
+ 
 };
 
 /*
