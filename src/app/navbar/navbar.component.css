@@ -26,8 +26,9 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 3.125 vw;
+    height: 5vw;
     display: flex;
+    line-height: 1.5;
     align-items: center;
     background-color: #161b22;
     color: white;
@@ -48,7 +49,17 @@
   }
   .toolbar #drop {
     height: 2.08vw;
-    margin-right: 5.5vw;
+    margin-right:1vw;
+    color: #fff;
+  }
+  .toolbar #drop2 {
+    height: 2.08vw;
+    margin-right:1vw;
+    color: #fff;
+  }
+  .toolbar #profile{
+    height: 2.08vw;
+    
     color: #fff;
   }
   .toolbar #bell:hover,
