@@ -5,13 +5,27 @@
     overflow: hidden;
     
 }
-.card{
-    /* background-color: #d9dce0;
-    color:rgb(240, 240, 243); */
-}
+
 .card-body p{
     font-size: 1.5vw;
+    font-family: futura-pt;
 }
 #button{
-    font-size:1vw;
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: 8vw;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 1rem;
+    padding: 3% 3%;
+    text-align: center;
 }
+#button:hover{
+    text-decoration: underline;
+}
+
