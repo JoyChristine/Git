@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { SearchComponent } from './search/search.component';
+import { SearchComponent } from './component/search/search.component';
 import { PipePipe } from './pipe/pipe.pipe';
 import { DirectiveDirective } from './directive/directive.directive';
 import { RepositoriesComponent } from './component/repositories/repositories.component';
