@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  key:'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',
+  
  
 };
 
