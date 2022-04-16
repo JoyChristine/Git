@@ -3,5 +3,15 @@
     url("https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGNvZGV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
     height:100vh;
     overflow: hidden;
-    color:rgb(124, 62, 62);
+    
+}
+.card{
+    /* background-color: #d9dce0;
+    color:rgb(240, 240, 243); */
+}
+.card-body p{
+    font-size: 1.5vw;
+}
+#button{
+    font-size:1vw;
 }
