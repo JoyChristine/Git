@@ -1,0 +1,107 @@
+.body{
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGNvZGV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    
+    /* background-color: #5D0926; */
+    /* margin-top: 5%; */
+    /* display:flex;
+    flex-direction: row; */
+}
+.body2{
+
+        background-color: rgba(0,0,0,.5);
+       
+   
+}
+.right{
+    display:flex;
+    flex-direction: row;
+    margin-top: 3%;
+    /* width:25%; */
+    /* background-color: red; */
+   
+}
+
+.right img {
+    margin-top: 0%;
+    margin-left: 0%;
+    border-radius: 10%;
+    height:22vw;
+    width: 22vw;
+   
+}
+.menu{
+   margin-left: 0%;
+   margin-top: 2%;
+}
+.menu-list{
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.menu-list li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.1vw;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    
+
+}
+#item1 a{
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-weight:bold;
+    color:#c9d1d9;
+}
+#item2 a{
+    color:#8b949e;
+    font-size: 1.5vw;
+    
+}
+#item3 a{
+    color:#c9d1d9;
+    font-size: 1.2vw;
+    margin-top: 9%;
+}
+#item4 a button{
+    margin-top:4%;
+    background-color:#21262d;
+    color: #c9d1d9;
+    border: none;
+    position: relative;
+    display: inline-block;
+    padding: 0.5vw 8vw;
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1.2;
+    border: 1px solid;
+    border-radius: .5vw;
+}
+#item5 a{
+    margin-top:5%;
+    color:#8b949e;
+    font-size: 1vw;
+    /*  */
+}
+#item6 a{
+   margin-top: 5%;
+}
+/* left */
+.left{
+    margin-top: 5%;
+}
+.repos h2{
+    color:#fff;
+    font-size:2vw;
+}
+#cards-flex{
+    display: inline-flex;
+   justify-content: space-around;
+   gap: 5vw;
+}
+.card{
+    font-size:1vw;
+}
+#btn{
+    font-size:1vw;
+}
