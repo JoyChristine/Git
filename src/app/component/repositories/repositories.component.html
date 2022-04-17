@@ -9,19 +9,17 @@
 </form>
       
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 my-4" *ngFor="let repo of repos">
             <div class="card" *ngIf="repos">
-                <div class="card-body" *ngFor="let repo of repos">
+                <div class="card-body" >
                     <p class="card-title">
                         <h4>
                             <a href="{{repo.html_url}}" target="_blank"> Repository Name : {{repo.name}}</a>
                         </h4>
  
-                         <p>description: {{repo.description}}</p>
+                         <p>Description: {{repo.description}}</p>
                         <p class="language">Languages used: {{repo.language}} </p>
                         <p class="time">Created on:{{repo.created_at}}</p>
-                   
-               
                     
                 </div>
                
