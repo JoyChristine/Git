@@ -52,3 +52,10 @@ h3{
   display: block;
   padding: 0vw .5vw 0vw 5vw;
 }
+.menu li a:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 255, 255);
+  -moz-text-decoration-color: rgb(255, 255, 255);
+  text-decoration-thickness: .3vw;
+ 
+}
