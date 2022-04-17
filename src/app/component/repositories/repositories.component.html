@@ -1,22 +1,27 @@
 
 <div class="repo">
    <!-- <br><br><br> -->
-    <app-search></app-search>
+   <form >
+    <div class="form-group">
+        <input type="search" class="form-control" name="search" id="search" placeholder="Search ....." autocomplete="off" [(ngModel)]="username" (keyup)="search()">
+    </div>
+    
+</form>
       
-    <div class="row" >
+    <div class="row">
         <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
+            <div class="card" *ngIf="repos">
+                <div class="card-body" *ngFor="let repo of repos">
                     <p class="card-title">
-                        Repository Name : Delani Studio
-                    <div class="card-text">
-                        <p class="describe">
-                            <span>Description: </span>
-                        </p>
-                        <p class="language">Languages used: </p>
-                        <p class="time">Created on:</p>
-                    </div>
-                <button id="button" >See github repo</button>
+                        <h4>
+                            <a href="{{repo.html_url}}" target="_blank"> Repository Name : {{repo.name}}</a>
+                        </h4>
+ 
+                         <p>description: {{repo.description}}</p>
+                        <p class="language">Languages used: {{repo.language}} </p>
+                        <p class="time">Created on:{{repo.created_at}}</p>
+                   
+               
                     
                 </div>
                
