@@ -2,20 +2,30 @@
     <!-- <br>
 <br>
 <br> -->
-    <app-search></app-search>
+<form >
+    <div class="form-group">
+        <input type="search" class="form-control" name="search" id="search" placeholder="Search ....." autocomplete="off" [(ngModel)]="username" (keyup)="search()">
+    </div>
+    
+</form>
+
      
     <div class="row">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-body">
-                   <img id="avatar" src="https://images.unsplash.com/photo-1649996415915-0641e9283532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="avatar"> 
-                    <div class="card-text"> <br>
-                        <p class="bio">
-                            <span>Bio</span>
+                <div class="card-body" *ngIf="user">
+                   <img class="github-avatar img-thumbnail" id="avatar" 
+                   src={{user.avatar_url}} alt="avatar"> 
+                    <div class="card-text" > <br>
+                        <p class="name">
+                            Username: {{user.name}}
                         </p>
-                        <p class="followers">Followers:</p>
-                        <p class="following">Following:</p>
-                        <p class="joined">Joined on: </p>
+                        <p class="bio">
+                            <span>Bio:{{user.bio}}</span>
+                        </p>
+                        <p class="followers">Followers:{{user.followers}}</p>
+                        <p class="following">Following:{{user.following}}</p>
+                        <p class="joined">Member Since:{{user.created_at}} </p>
                         <button class="button">See github profile</button>
                     </div>
                
