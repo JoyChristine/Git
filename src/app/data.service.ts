@@ -15,7 +15,7 @@ export class DataService {
 
 
   // private key: string = 'environment.key';
-  private key: string = 'environment.key';
+  private key = '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';
 
 
   private username!: string;
