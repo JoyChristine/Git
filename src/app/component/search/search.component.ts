@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-search',
@@ -6,8 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+  username: any;
+  user: any;
+  
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
+
+  // search(){
+  //   this.dataService.updateUsername(this.username);
+  //   this.dataService.getGitUser()
+  //     .subscribe(user => {
+  //       console.log('why so serious');
+  //       (this.user = user);
+        
+  //     });
+  // }
 
   ngOnInit(): void {
   }
