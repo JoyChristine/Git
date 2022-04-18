@@ -19,18 +19,28 @@
 .card{
     /* margin-bottom:100%; */
     display: flex;
+    /* background-color: #111827; */
+    background-color: #172730;
+    color:white;
+    border:2px solid #f8f8f8;
     
 }
 #repo-name{
-    color: black;
+    color:rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 1.4vw;
+    font-family: libre Baskerville, monospace;
 }
 #repo-name:hover{
     text-decoration: underline;
 }
 .card-body p{
     font-size: 1.5vw;
-    font-family: futura-pt;
+    
+}
+#describe, #language, #time{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vw;
 }
 #button{
     background-color: #111827;

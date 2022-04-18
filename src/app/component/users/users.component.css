@@ -1,15 +1,15 @@
 .repo{
     background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)),
     url("https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGNvZGV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-   height:100%;
+   height:100vh;
     overflow: hidden;
     
 }
 #avatar{
     width: 20vw;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
    
 }
 #search{
@@ -23,7 +23,13 @@
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     }
       
-
+.card-body{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.card-text{
+    margin-left:10%;
+}
 .card-body p{
     font-size: 1.5vw;
     font-family: futura-pt;
