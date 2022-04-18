@@ -14,8 +14,9 @@ export class RepositoriesComponent implements OnInit {
     
     constructor(private dataService: DataService){
       console.log('rere')
+      
       this.dataService.getGitRepos()
-      .subscribe(repos => {
+      .then(repos => {
         // console.log('rerere');
         (this.repos = repos);
         
@@ -23,9 +24,9 @@ export class RepositoriesComponent implements OnInit {
 
     }
     search(){
-      this.dataService.updateUsername(this.username);
+      this.dataService.newUsername(this.username);
       this.dataService.getGitRepos()
-      .subscribe(repos => {
+      .then(repos => {
         // console.log('rerere');
         (this.repos = repos);
         
