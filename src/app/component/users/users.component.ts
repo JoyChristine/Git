@@ -11,31 +11,37 @@ import { DataService } from 'src/app/data.service';
 export class UsersComponent implements OnInit {
   user:any =[];
   username!: string;
+  gitusers: any;
   
     
     constructor(private dataService: DataService){
-      console.log('rere')
+      // console.log('rere')
       this.dataService.getGitUser()
       .then(user => this.user = user);
-      // .subscribe(user => {
-      //   // console.log('rerere');
-      //   (this.user = user);
-        
-      // });
-      
-     
       
     }
-    search(){
+    searchGitUser(){
       this.dataService.newUsername(this.username);
-      this.dataService.getGitUser()
-      .then(user => this.user = user);
-        // .subscribe(user => {
-        //   console.log('why so serious');
-        //   (this.user = user);
-          
-        // });
+      this.dataService.getGitUser(). 
+      then(user => this.user = user);
+      
+      
     }
+    // search(term:string){
+    //   // this.dataService.newUsername(this.username);
+    //   this.dataService.getGitUser(term)
+    //   .then(success => {
+    //       this.user = this.user;
+    //       this.gitusers = this.dataService.user;
+    //   }, 
+    //   (error) => {
+    //     alert('error');
+    //     console.log("error");
+    //   }
+      
+    //   // .then(user => this.user = user);
+        
+    //   )};
    
 
   
@@ -64,6 +70,12 @@ export class UsersComponent implements OnInit {
 
 
 
+
+
+
+function term(term: any, string: any) {
+  throw new Error('Function not implemented.');
+}
 // users: string[] = []; 
   // data: string[] =[];
   // constructor(private http: HttpClient, private dataService: DataService) { }
