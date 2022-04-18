@@ -1,3 +1,5 @@
+# Reading materials
+https://codesource.io/using-promises-to-make-http-requests-in-angular/
 # Git
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
