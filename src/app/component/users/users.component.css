@@ -28,6 +28,10 @@
     font-size: 1.5vw;
     font-family: futura-pt;
 }
+#user{
+    color: #fff;
+    text-decoration: none;
+}
 .button{
     background-color: #111827;
     border: 1px solid transparent;
