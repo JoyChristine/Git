@@ -4,6 +4,10 @@
 
 export const environment = {
   production: false,
+  key:'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',
+  gituser:'https://api.github.com/users/',
+  gitusers: 'https://github.com/',
+  manygitusers: 'https://api.github.com/search/users?q=',
   
   
  
