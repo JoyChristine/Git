@@ -16,23 +16,25 @@ export class UsersComponent implements OnInit {
     constructor(private dataService: DataService){
       console.log('rere')
       this.dataService.getGitUser()
-      .subscribe(user => {
-        // console.log('rerere');
-        (this.user = user);
+      .then(user => this.user = user);
+      // .subscribe(user => {
+      //   // console.log('rerere');
+      //   (this.user = user);
         
-      });
+      // });
       
      
       
     }
     search(){
-      this.dataService.updateUsername(this.username);
+      this.dataService.newUsername(this.username);
       this.dataService.getGitUser()
-        .subscribe(user => {
-          console.log('why so serious');
-          (this.user = user);
+      .then(user => this.user = user);
+        // .subscribe(user => {
+        //   console.log('why so serious');
+        //   (this.user = user);
           
-        });
+        // });
     }
    
 
