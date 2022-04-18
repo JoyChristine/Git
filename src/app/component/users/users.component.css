@@ -6,7 +6,7 @@
     
 }
 #avatar{
-    width: 20vw;
+    width: 22vw;
     display: block;
   /* margin-left: auto;
   margin-right: auto; */
@@ -22,7 +22,9 @@
         /* background-color: transparent; */
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     }
-      
+.card{
+    border:5px solid #587bc5;
+} 
 .card-body{
     display: flex;
     /* justify-content: space-between; */
@@ -33,6 +35,7 @@
 .card-body p{
     font-size: 1.5vw;
     font-family: futura-pt;
+    
 }
 #user{
     color: #fff;
