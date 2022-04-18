@@ -25,8 +25,11 @@
                         </p>
                         <p class="followers">Followers:{{user.followers}}</p>
                         <p class="following">Following:{{user.following}}</p>
-                        <p class="joined">Member Since:{{user.created_at}} </p>
-                        <button class="button">See github profile</button>
+                       
+                        <p class="joined">Member Since:{{user.created_at | date}} </p>
+                        <button class="button" >
+                            <a id="user"href="{{user.html_url}}" target="_blank">See github profile</a>
+                        </button>
                     </div>
                
                     
