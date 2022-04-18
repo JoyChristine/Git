@@ -14,12 +14,12 @@
                 <div class="card-body" >
                     <p class="card-title">
                         <h4>
-                            <a href="{{repo.html_url}}" target="_blank"> Repository Name : {{repo.name}}</a>
+                            <a id="repo-name" href="{{repo.html_url}}" target="_blank"> Repository Name : {{repo.name}}</a>
                         </h4>
  
                          <p>Description: {{repo.description}}</p>
                         <p class="language">Languages used: {{repo.language}} </p>
-                        <p class="time">Created on:{{repo.created_at}}</p>
+                        <p class="time">Created on:{{repo.created_at | date}}</p>
                     
                 </div>
                
