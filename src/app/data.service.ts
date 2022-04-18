@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
+import { User } from '../app/classes/user'
 
 // import { map } from 'rxjs/internal/operators/map';
 
@@ -10,33 +11,54 @@ import { environment } from '../environments/environment';
   providedIn: 'root'
 })
 export class DataService {
-  // newUsername: any;
   
+  user!:object[];
 
-
-  // private key: string = 'environment.key';
-    key:string = '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';
-
-
+  private key:string = environment.key;
+  private gituser:string = environment.gituser;
+  private manygitusers:string = environment.manygitusers;
   private username!: string;
 
 
   constructor(private http: HttpClient){
       console.log('github service is running');
       this.username = 'JoyChristine';
+      // this.key =;
+  }
+  getnewGitUser(term: string){
+    const promise = new Promise<void>((resolve, reject) =>{
+      // let apiKey = `'https://api.github.com/search/users?q='${this.username}??access_token=+{environment.key}`;
+      this.http
+      .get(`${environment.manygitusers}${this.username}??access_token=+{environment.key}`)
+      .subscribe(
+        {
+           next: (response: any) =>
+          { 
+            this.user = response.data;
+            resolve();
+        
+          },
+          error: (error: any) => {
+            reject(error);
+            alert('Error');
+          }, complete: () =>{
+            console.log("done");
+          },
+       
+      });
+
+    });
+    return promise;
+
+  }
+  getGitUser(){
+    return this.http.get(`https://api.github.com/users/${this.username}??access_token=+{environment.key}`).toPromise();
+
   }
 
-  getGitUser(){
-    return this.http
-      .get<any>('https://api.github.com/users/'+this.username)
-      .toPromise();
-      // .pipe(map((res) => res));
-  }
   getGitRepos(){
-    return this.http
-      .get<any>('https://api.github.com/users/'+this.username+'/repos')
-      .toPromise();
-      // .pipe(map((res) => res));
+    return this.http.get<any>(`https://api.github.com/users/${this.username}/repos??access_token=+{environment.key}`).toPromise();
+      
   }
 
 
@@ -80,6 +102,10 @@ export class DataService {
 
 
 
+
+function item(item: any, arg1: (any: any) => void): User[] {
+  throw new Error('Function not implemented.');
+}
 // private userName!: string;
 
 //   constructor(private http: HttpClient) {
