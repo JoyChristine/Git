@@ -48,6 +48,7 @@
 .card-title{
     font-size:2vw;
     text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
 }
 .card-text{
     font-size: 1.3vw;
@@ -66,7 +67,7 @@
     
 } */
 #left a,#right a{
-    color: #18272F;
+    color: #044c72;
     position: relative;
     text-decoration: none;
     font-size: 1.1vw;
