@@ -25,15 +25,26 @@
     border:2px solid #f8f8f8;
     
 }
-#repo-name{
+/* #repo-name{
+    
+}
+#repo-name:hover{
+    text-decoration: underline;
+} */
+h4 #repo-name{
     color:rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.4vw;
     font-family: libre Baskerville, monospace;
-}
-#repo-name:hover{
+  }
+/* h4 #repo-name:hover{
     text-decoration: underline;
-}
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 20%;
+  
+  
+} */
+
 .card-body p{
     font-size: 1.5vw;
     
