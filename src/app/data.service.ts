@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment'
 
-import { map } from 'rxjs/internal/operators/map';
+// import { map } from 'rxjs/internal/operators/map';
 
 
 
@@ -10,12 +10,12 @@ import { map } from 'rxjs/internal/operators/map';
   providedIn: 'root'
 })
 export class DataService {
-  updateusername: any;
+  // newUsername: any;
   
 
 
   // private key: string = 'environment.key';
-  private key = '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';
+    key:string = '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';
 
 
   private username!: string;
@@ -28,21 +28,22 @@ export class DataService {
 
   getGitUser(){
     return this.http
-      .get('https://api.github.com/users/'+this.username)
-      .pipe(map((res) => res));
+      .get<any>('https://api.github.com/users/'+this.username)
+      .toPromise();
+      // .pipe(map((res) => res));
   }
   getGitRepos(){
     return this.http
-      .get('https://api.github.com/users/'+this.username+'/repos')
-      .pipe(map((res) => res));
+      .get<any>('https://api.github.com/users/'+this.username+'/repos')
+      .toPromise();
+      // .pipe(map((res) => res));
   }
-  updateUsername(username:any){
+
+
+  newUsername(username:any){
     this.username = username;
   }
-  // updateUsername(username:string){
-  //   this.username = username;
-  // }
-
+ 
   
   
 }
