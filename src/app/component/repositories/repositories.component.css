@@ -21,7 +21,13 @@
     display: flex;
     
 }
-.col-md-
+#repo-name{
+    color: black;
+    text-decoration: none;
+}
+#repo-name:hover{
+    text-decoration: underline;
+}
 .card-body p{
     font-size: 1.5vw;
     font-family: futura-pt;
